@@ -14,9 +14,9 @@ var once sync.Once
 
 type Config struct {
 	Auth struct {
-		PhoneNum string `env:"APP_PHN,file" envDefault:"C:/Users/kmr3x/OneDrive/Desktop/WnEd/Go_Projects/CFG_INFO/APP_PHN.txt"`
-		AppId    string `env:"APPID_ISUB,file" envDefault:"C:/Users/kmr3x/OneDrive/Desktop/WnEd/Go_Projects/CFG_INFO/APPID_ISUB.txt"`
-		AppHash  string `env:"APPHASH_ISUB,file" envDefault:"C:/Users/kmr3x/OneDrive/Desktop/WnEd/Go_Projects/CFG_INFO/APPHASH_ISUB.txt"`
+		PhoneNum string `env:"APP_PHN"`
+		AppId    string `env:"APPID_ISUB"`
+		AppHash  string `env:"APPHASH_ISUB"`
 	}
 }
 
