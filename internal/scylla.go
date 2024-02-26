@@ -33,7 +33,7 @@ func ConnectDB() *gocql.Session {
 	cluster := CreateCluster(gocql.Quorum, "isub", "127.0.0.1")
 	session, err := gocql.NewSession(*cluster)
 	if err != nil {
-		log.Fatal("Ошибка подключения", err)
+		log.Fatal("Ошибка подключения: ", err)
 	}
 	return session
 }
